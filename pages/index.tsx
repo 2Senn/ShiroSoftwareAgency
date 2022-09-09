@@ -6,6 +6,8 @@ import AboutUs from '../components/about-us'
 import Skills from '../components/skills'
 import Works from '../components/works'
 import TrustedBy from '../components/trusted-by'
+import ContactUs from '../components/contact-us'
+import Footer from '../components/footer'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +23,8 @@ const Home: NextPage = () => {
       <Skills />
       <Works />
       <TrustedBy />
+      <ContactUs />
+      <Footer />
     </div>
   )
 }
