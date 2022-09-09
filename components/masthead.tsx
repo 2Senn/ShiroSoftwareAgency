@@ -1,6 +1,6 @@
 import React, { useRef, useContext, useState, useCallback } from "react";
 import Image from "next/image";
-import { ScrollContext } from "./scroll-observer";
+import { ScrollContext } from "../utils/scroll-observer";
 
 const Masthead: React.FC = () => {
 
@@ -26,7 +26,7 @@ const Masthead: React.FC = () => {
   return (
     <div
       ref={refContainer}
-      
+
       className="min-h-screen relative flex flex-col items-start 
                 justify-center sticky top-0  -z-10"
       style={{
