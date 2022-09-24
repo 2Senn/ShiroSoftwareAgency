@@ -38,7 +38,7 @@ const Works = () => {
               <div>
                 <WorkLink href="https://github.com/2Senn">
 
-                <strong>industry leading app</strong>
+                  <strong>industry leading app</strong>
                 </WorkLink>
               </div>
             </WorkLeft>
@@ -55,7 +55,7 @@ const Works = () => {
         <Tile page={2} renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>Bring your late night ideas to</div> 
+              <div>Bring your late night ideas to</div>
               <div>
                 <WorkLink href="https://github.com/2Senn">
                   <strong> L I F E </strong>
@@ -64,7 +64,7 @@ const Works = () => {
             </WorkLeft>
             <WorkRight progress={progress}>
               <video autoPlay loop muted
-                  playsInline className=" object-cover ">
+                playsInline className=" object-cover ">
                 <source src="/assets/works/tape-night.m4v" type="video/mp4; codecs=hvc1" />
                 <source src="/assets/works/tape-night.webm" type="video/webm; codecs=vp9" />
               </video>

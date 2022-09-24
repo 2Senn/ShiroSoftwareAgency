@@ -9,7 +9,7 @@ interface Props {
   children: React.ReactNode
 }
 
-interface ItemProps{
+interface ItemProps {
   width: number
   children: React.ReactNode
 }
@@ -23,20 +23,19 @@ const SliderContainer: React.FC<Props> = ({ children, initialOffsetX, className,
   const enabled = innerWidth < contentWidth
 
   useAnimationFrame(
-    enabled, 
+    enabled,
     useCallback(() => {
-      const { current: elContainer} = refContainer
+      const { current: elContainer } = refContainer
       const { current: elContent } = refContent
-      if(elContainer && elContent){
+      if (elContainer && elContent) {
         refScrollX.current += 0.5
         elContainer.scrollLeft = refScrollX.current
-        if(elContainer.scrollLeft >= elContent.clientWidth) {
+        if (elContainer.scrollLeft >= elContent.clientWidth) {
           refScrollX.current = 0
           elContainer.scrollLeft = 0
         }
       }
     }, [])
-
   )
 
   return (
@@ -52,7 +51,7 @@ const SliderContainer: React.FC<Props> = ({ children, initialOffsetX, className,
 }
 
 export const SliderItem: React.FC<ItemProps> = ({ children, width }) => (
-  <div 
+  <div
     className="inline-flex justify-center items-center mx-4"
     style={{
       width

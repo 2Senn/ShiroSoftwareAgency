@@ -1,5 +1,5 @@
 import { pbkdf2 } from "crypto";
-import React, { useContext, useRef } from "react";
+import React, { ReactNode, useContext, useRef } from "react";
 import { ScrollContext } from "../utils/scroll-observer";
 
 interface WrapperProps {
@@ -19,6 +19,7 @@ interface Child {
 interface Props {
   page: number
   renderContent: (props: { progress: number }) => any
+  children: ReactNode
 
 }
 
